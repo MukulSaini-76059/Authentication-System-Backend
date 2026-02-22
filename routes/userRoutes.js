@@ -2,8 +2,8 @@ const express = require("express");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 
-const User = require("../models/User");
-const authMiddleware = require("../middleware/authMiddleware");
+const User = require("../models/user");
+const authMiddleware = require("../Middleware/authMiddleware");
 
 const router = express.Router();
 
@@ -18,6 +18,7 @@ router.post("/register", async (req, res) => {
     if (!name || !email || !password) {
       return res.status(400).json({ message: "All fields are required" });
     }
+    
 
     const existingUser = await User.findOne({ email });
     if (existingUser) {
@@ -66,6 +67,7 @@ router.post("/login", async (req, res) => {
       return res.status(401).json({ message: "Invalid password" });
     }
 
+   
     const token = jwt.sign(
       { id: user._id },
       process.env.SECRET_KEY,
