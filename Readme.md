@@ -54,20 +54,13 @@ GET /api/dashboard
 ## ⚙️ Installation & Setup
 
 ### 1. Clone the repository
-git clone https://github.com/MukulSaini-76059/Backend.git
+git clone https://github.com/MukulSaini-76059/Authentication-System-Backend
 
 ### 2. Navigate to project folder
 cd Backend
 
 ### 3. Install dependencies
 npm install
-
-### 4. Create `.env` file and add:
-
-PORT=5000  
-MONGO_URI=your_mongodb_connection_string  
-JWT_SECRET=your_secret_key  
-GOOGLE_CLIENT_ID=your_google_client_id  
 
 ### 5. Run the server
 npm run dev
@@ -93,10 +86,10 @@ backend/
 ## 🔗 Frontend Repository
 
 Frontend GitHub:  
-https://github.com/MukulSaini-76059/Frontend
+https://github.com/MukulSaini-76059/Authentication-System-Frontend
 
 Live Frontend:  
-https://frontend-seven-indol-27.vercel.app
+https://frontend-seven-indol-27.vercel.app/login
 
 ---
 
