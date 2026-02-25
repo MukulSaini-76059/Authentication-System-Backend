@@ -5,12 +5,6 @@ It provides secure user authentication using **JWT**, password hashing with **bc
 
 ---
 
-## 🌐 Live API
-
-Base URL:  
-https://backend-4as5.onrender.com
-
----
 
 ## 🔧 Features
 
